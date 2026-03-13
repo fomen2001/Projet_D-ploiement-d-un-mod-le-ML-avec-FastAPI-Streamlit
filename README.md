@@ -7,7 +7,7 @@ API de prédiction du risque de diabète + Interface Web + bonnes pratiques MLOp
 ## Structure du projet
 
 ```
-ml-serving-tp/
+Projet_D-ploiement-d-un-mod-le-ML-avec-FastAPI-Streamlit/
 ├── app/
 │   ├── __init__.py
 │   ├── api.py          # API FastAPI (/health, /predict)
@@ -46,7 +46,7 @@ Cela crée `artifacts/model.joblib`.
 ### Étape 2 — Lancer l'API FastAPI
 
 ```bash
-uvicorn app.api:app --reload
+python -m uvicorn app.api:app --reload
 ```
 
 L'API est disponible sur : http://127.0.0.1:8000
